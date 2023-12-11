@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const crypto = require('crypto')
 
 const app = express()
-const port = process.env.PORT || 4000
+// const port = process.env.PORT || 4000
 
 app.use(bodyParser.json())
 
@@ -69,4 +69,6 @@ app.post('/webhook', (req, res) => {
   }
 })
 
-app.listen(port, () => console.log(`Zoom Webhook sample listening on port ${port}!`))
+// app.listen(port, () => console.log(`Zoom Webhook sample listening on port ${port}!`))
+
+module.exports = app;
